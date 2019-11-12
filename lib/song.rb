@@ -18,5 +18,8 @@ class Song
     else 
       return nil
     end
+    
+  def self.all
+    @@all
   end
 end
