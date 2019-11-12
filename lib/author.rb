@@ -6,7 +6,7 @@ class Author
   end
   
   def posts 
-    Posts.all.select do |post|
+    Post.all.select do |post|
     post.author == self
     end
   end
