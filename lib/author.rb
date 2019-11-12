@@ -5,14 +5,14 @@ class Author
     @name = name
   end
   
-  def post 
+  def posts 
     Posts.all.select do |post|
     post.author == self
     end
   end
 
-  def add_song(song)
-    song.artist = self
+  def add_post(post)
+    post.author = self
   end
   
   def add_song_by_name(song_name)
